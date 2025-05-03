@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Fetch Repo') {
             steps {
-                git 'https://github.com/Moe-404/jenkins_nodejs_example', branch: 'master',
+                git url: 'https://github.com/Moe-404/jenkins_nodejs_example', branch: 'master',
                 credentialsId: 'github-token'
             }
         }//end of stage
